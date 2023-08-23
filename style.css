@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+html{
+	padding:0;
+	margin:0;
+	background-image:url("noirviolet.jpg");
+	background-size: cover;
+	color:white;
+}
+
+p{
+	margin:0;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	margin-top:100px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+}
+/*==================================================================== Corps de la page (Fond gris opacité 0.8) =====================================================================*/
+main{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	width:80%;
+	background: rgb(28,24,33,0.8);
+	border-radius:40px;
+	padding-bottom:20px;
+}
+/*==================================================================== Heure actuelle =====================================================================*/
+aside{
+	font-size:22px;
+	width:100%;
+	display:flex;
+	justify-content:start;
+	padding-left:80px;
+	padding-top:20px;
+}
+/*==================================================================== Input Nom de ville =====================================================================*/
+body > main > section:nth-of-type(1) {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+}
+
+body > main > section > input {
+  width: 60%;
+  border: 0;
+  border-bottom: 1px solid #8F00FF;
+  outline: 0;
+  font-size: 50px;
+  color: white;
+  padding-bottom: 8px;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-align:center;
+}
+
+/*==================================================================== Affichage température °C et temps actuelle =====================================================================*/
+
+body > main > section:nth-of-type(2) {
+  width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+body > main > section:nth-of-type(2) > article:nth-of-type(1) {
+  width: 100%;
+  font-size:60px;
+  display:flex;
+  justify-content:center;
+}
+
+body > main > section:nth-of-type(2) > article:nth-of-type(2) {
+  width: 50%;
+  display:flex;
+  justify-content:flex-end;
+  font-size:80px;
+}
+
+body > main > section:nth-of-type(2) > article:nth-of-type(3) {
+  width: 50%;
+  display:flex;
+  justify-content:flex-start;
+  font-size:30px;
+}
+
+body > main > section:nth-of-type(2) > article:nth-of-type(4) {
+  width: 100%;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+}
+
+/*==================================================================== Affichage vignette par date (3 premier) =====================================================================*/
+
+body > main > section:nth-of-type(3) {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	
+}
+
+.vignette {
+	width:40%;
+	display:flex;
+	margin:auto;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:20px;
+	background: rgb(28,24,33,1);
+	border-radius:40px;
+	padding: 10px 5px;
+	box-shadow: 5px 5px 5px rgba(143,0,255,.35);
+}
+
+.vignette > article{
+	width:20%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+/*==================================================================== Boutton Jours suivants =====================================================================*/
+
+#jour_suivant{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	margin-bottom:20px;
+}
+
+#jour_suivant > button{
+	background: none;
+	border: 1px solid #8F00FF;
+	transition: border 300ms ease, transform 800ms ease;
+	border-radius: 50px;
+	cursor:pointer;
+	width:30%;
+}
+
+#jour_suivant > button:hover {
+	transform: scale(1.05);
+	border-color: #8F00FF transparent;
+}
+
+#jour_suivant > button:active {
+	transform: scale(0.9);
+}
+
+#jour_suivant > button > p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	color:white;
+	font-size:20px;
+	padding:10px 0;
+}
+
+/*==================================================================== Petite vignette =====================================================================*/
+
+.wrapper {
+	display: flex;
+	width:80%;
+	justify-content:center;
+}
+
+.slider {
+	display: flex;
+	overflow: hidden;
+	width:80%;
+}
+
+.item img {
+	width:80%
+}
+
+.next, .prev {
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: rgb(100,100,100, 0.5);
+}
+
+.prev{
+	transform: rotate(-180deg);
+}
+.next:hover, .prev:hover{
+	color: rgb(100,100,100, 1);
+}
+
+.item {
+	flex: 1 0 25%;
+	text-align: center;
+}

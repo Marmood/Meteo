@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	<body>
+		<main>
+			<aside>
+				<p id="heure_exacte"></p>
+			</aside>
+			<section>
+				<input type="text" id="champ" placeholder="Nom de Ville"/>
+			</section>
+			<section>
+				<article><p></p></article>
+				<article><p></p></article>
+				<article><p>°C</p></article>
+				<article><p></p></article>
+			</section>
+			<section id="section1">
+				<section class="vignette">
+					<img/>
+					<article>Date</article>
+					<article>taux d'humidité</article>
+					<article>Vitesse du vent</article>
+					<article>Temp</article>
+				</section>
+				<section class="vignette">
+					<img/>
+					<article>Date</article>
+					<article>taux d'humidité</article>
+					<article>Vitesse du vent</article>
+					<article>Temp</article>
+				</section>
+				<section class="vignette">
+					<img/>
+					<article>Date</article>
+					<article>taux d'humidité</article>
+					<article>Vitesse du vent</article>
+					<article>Temp</article>
+				</section>
+				<section class="vignette">
+					<img/>
+					<article>Date</article>
+					<article>taux d'humidité</article>
+					<article>Vitesse du vent</article>
+					<article>Temp</article>
+				</section>
+			</section>
+			<section id="jour_suivant">
+				<button id="transparent" onclick="Next()"><p>Afficher 4 jours</p></button>
+				<button id="transparent2" onclick="Previous()" style="display:none"><p>Afficher 2 jours</p></button>
+			</section>
+			
+			<section class="wrapper">
+				<button class="prev" type="button" onclick="prevSlide(this)">➤</button>
+				<section class="slider">
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img />
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+					<article class="item">
+						<p></p>
+						<p></p>
+						<img/>
+					</article>
+
+					
+				</section>
+			  <button class="next" type="button" onclick="nextSlide(this)">➤</button>
+			</section>
+			
+		</main>
+	<script type="text/javascript" src="Meteo.js"></script>
+	
+	</body>
+</html>
